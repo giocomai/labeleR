@@ -203,7 +203,7 @@ create_herbarium_label <- function(data = data,
                  collection.column       ,
                  assistants.column       ,
                  date.column             )
-  arguments <- arguments[-which(arguments=="")]
+  arguments <- arguments[arguments!=""]
 
   data <- check_latex_columns(data, arguments)
 
